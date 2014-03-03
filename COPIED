@@ -11,7 +11,6 @@
 #   mv sw.deri.org/2008/12/alerts/code/* RDFAlerts/
 #   mkdir RDFAlerts/doc
 #   mv sw.deri.org/2008/12/alerts/paper/ RDFAlerts/doc/
-#   cd RDFAlerts/
 #   find RDFAlerts -name "index.html*" | xargs -n 1 rm#    hg clone https://dvcs.w3.org/hg/prov
 # 
 # Our copy can be retrieved using the following command.
