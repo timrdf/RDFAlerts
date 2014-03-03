@@ -2,9 +2,9 @@
 #3>    prov:wasDerivedFrom   <https://raw.github.com/timrdf/prov-wg/master/COPIED>;
 #3> .   
 #
-# This git repository was copied from the latest version of the
-# W3C PROV-WG's mercurial repository, which can be retrieved
-# using the following command.
+# This git repository was copied from 
+# DERI's http://sw.deri.org/2008/12/alerts
+# The following commands were used.
 # 
 #   git clone git@github.com:timrdf/RDFAlerts.git
 #   wget --mirror -e robots=off --no-parent http://sw.deri.org/2008/12/alerts/
