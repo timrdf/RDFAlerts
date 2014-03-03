@@ -1,0 +1,38 @@
+#3> <> prov:specializationOf <https://raw.github.com/timrdf/RDFAlerts/master/COPIED>;
+#3>    prov:wasDerivedFrom   <https://raw.github.com/timrdf/prov-wg/master/COPIED>;
+#3> .   
+#
+# This git repository was copied from the latest version of the
+# W3C PROV-WG's mercurial repository, which can be retrieved
+# using the following command.
+# 
+#   git clone git@github.com:timrdf/RDFAlerts.git
+#   wget --mirror -e robots=off --no-parent http://sw.deri.org/2008/12/alerts/
+#   mv sw.deri.org/2008/12/alerts/code/* RDFAlerts/
+#   mkdir RDFAlerts/doc
+#   mv sw.deri.org/2008/12/alerts/paper/ RDFAlerts/doc/
+#   cd RDFAlerts/
+#   find RDFAlerts -name "index.html*" | xargs -n 1 rm#    hg clone https://dvcs.w3.org/hg/prov
+# 
+# Our copy can be retrieved using the following command.
+# 
+#    git clone https://github.com/timrdf/RDFAlerts.git
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix bibo: <http://purl.org/ontology/bibo/>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+
+<http://sw.deri.org/2008/12/alerts/> a bibo:Website;
+   prov:wasAttributedTo <http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan>;
+.
+<http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan>
+   prov:alternateOf <http://data.semanticweb.org/person/aidan-hogan> .
+
+<https://github.com/timrdf/RDFAlerts> a doap:GitRepository;
+   prov:wasDerivedFrom <http://sw.deri.org/2008/12/alerts/>;
+   doap:browse   <https://github.com/timrdf/RDFAlerts>;
+   doap:location <https://github.com/timrdf/RDFAlerts.git>;
+   prov:wasAttributedTo <http://tw.rpi.edu/instances/TimLebo>;
+   foaf:isPrimaryTopicOf <>;
+. 
