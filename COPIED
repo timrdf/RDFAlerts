@@ -18,15 +18,21 @@
 #    git clone https://github.com/timrdf/RDFAlerts.git
 
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix con:  <http://www.w3.org/2000/10/swap/pim/contact#>.
 @prefix doap: <http://usefulinc.com/ns/doap#>.
 @prefix bibo: <http://purl.org/ontology/bibo/>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
 
 <http://sw.deri.org/2008/12/alerts/> a bibo:Website;
-   prov:wasAttributedTo <http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan>;
+   prov:wasAttributedTo <http://aidanhogan.com/foaf.rdf#me>;
 .
 <http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan>
-   prov:alternateOf <http://data.semanticweb.org/person/aidan-hogan> .
+   prov:alternateOf <http://aidanhogan.com/foaf.rdf#me>;
+   con:preferredURI <http://aidanhogan.com/foaf.rdf#me>;
+.
+<http://aidanhogan.com/foaf.rdf#me>
+   prov:alternateOf <http://data.semanticweb.org/person/aidan-hogan>;
+.
 
 <https://github.com/timrdf/RDFAlerts> a doap:GitRepository;
    prov:wasDerivedFrom <http://sw.deri.org/2008/12/alerts/>;
